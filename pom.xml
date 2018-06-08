@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.openbaton</groupId>
+  <artifactId>openbaton-nfvo</artifactId>
+  <version>5.2.2-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <!--<properties>-->
+    <!--<maven.assembly.plugin.version>2.4</maven.assembly.plugin.version>-->
+  <!--</properties>-->
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>repackage</goal>
+            </goals>
+            <configuration>
+              <classifier>spring-boot</classifier>
+              <mainClass>org.openbaton.nfvo.main.Application</mainClass>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.openbaton</groupId>
+      <artifactId>main</artifactId>
+      <version>5.2.2-SNAPSHOT</version>
+      <scope>compile</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>xml-apis</artifactId>
+          <groupId>xml-apis</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+  </dependencies>
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.flywaydb</groupId>
+        <artifactId>flyway-core</artifactId>
+        <version>4.2.0</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.11.RELEASE</version>
+        <scope>import</scope>
+        <type>pom</type>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+  <!--<modules>-->
+    <!--<module>exception</module>-->
+    <!--<module>repository</module>-->
+    <!--<module>catalogue</module>-->
+    <!--<module>common</module>-->
+    <!--<module>plugin</module>-->
+    <!--<module>vim-int</module>-->
+    <!--<module>vnfm/vnfm-int</module>-->
+    <!--<module>core/core-int</module>-->
+    <!--<module>security</module>-->
+    <!--<module>dashboard</module>-->
+    <!--<module>core/core-impl</module>-->
+    <!--<module>tosca-parser</module>-->
+    <!--<module>api</module>-->
+    <!--<module>cli</module>-->
+    <!--<module>monitoring</module>-->
+    <!--<module>vnfm/vnfm-impl</module>-->
+  <!--</modules>-->
+
+</project>

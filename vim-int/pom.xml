@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.openbaton</groupId>
+  <artifactId>vim-int</artifactId>
+  <version>5.2.2-SNAPSHOT</version>
+  <name>OpenBaton</name>
+  <description>Openbaton libraries for almost everything</description>
+  <url>http://openbaton.github.io</url>
+  <inceptionYear>2015</inceptionYear>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repositories</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>lto</id>
+      <name>Lorenzo Tomasini</name>
+      <email>lorenzo.tomasini@fokus.fraunhofer.de</email>
+    </developer>
+    <developer>
+      <id>gca</id>
+      <name>Giuseppe Carella</name>
+      <email>giuseppe.carella@fokus.fraunhofer.de</email>
+    </developer>
+    <developer>
+      <id>mpa</id>
+      <name>Michael Pauls</name>
+      <email>michael.pauls@fokus.fraunhofer.de</email>
+    </developer>
+  </developers>
+  <scm>
+    <connection></connection>
+    <developerConnection>https://github.com/openbaton</developerConnection>
+    <url>http://openbaton.github.io</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>org.openbaton</groupId>
+      <artifactId>plugin</artifactId>
+      <version>5.2.2-SNAPSHOT</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.openbaton</groupId>
+      <artifactId>catalogue</artifactId>
+      <version>5.2.2-SNAPSHOT</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.openbaton</groupId>
+      <artifactId>exception</artifactId>
+      <version>5.2.2-SNAPSHOT</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.openbaton</groupId>
+      <artifactId>monitoring</artifactId>
+      <version>5.2.2-SNAPSHOT</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.openbaton</groupId>
+      <artifactId>vim-drivers</artifactId>
+      <version>5.2.2-SNAPSHOT</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>
