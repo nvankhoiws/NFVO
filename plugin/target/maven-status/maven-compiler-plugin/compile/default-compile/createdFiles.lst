@@ -1,0 +1,7 @@
+org/openbaton/plugin/utils/PluginCaller$ByteArrayToBase64TypeAdapter.class
+org/openbaton/plugin/utils/PluginCaller$1.class
+org/openbaton/plugin/utils/PluginCaller.class
+org/openbaton/plugin/interfaces/Plugin.class
+org/openbaton/plugin/utils/RabbitPluginBroker.class
+org/openbaton/plugin/mgmt/PluginStartup.class
+org/openbaton/plugin/utils/Utils.class

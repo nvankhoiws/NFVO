@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.openbaton.nfvo.repositories.tests.RepositoriesClassSuiteTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 28.29 sec

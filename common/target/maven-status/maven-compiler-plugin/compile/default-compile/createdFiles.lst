@@ -1,0 +1,16 @@
+org/openbaton/nfvo/common/configuration/RabbitConfiguration.class
+org/openbaton/nfvo/common/configuration/GsonConfiguration.class
+org/openbaton/nfvo/common/configuration/VnfmGsonDeserializerNFVMessage.class
+org/openbaton/nfvo/common/utils/viminstance/VimInstanceUtils.class
+org/openbaton/nfvo/common/internal/model/EventNFVO.class
+org/openbaton/nfvo/common/configuration/NfvoGsonDeserializerNetwork.class
+org/openbaton/nfvo/common/utils/key/KeyHelper.class
+org/openbaton/nfvo/common/configuration/NfvoGsonDeserializerImage.class
+org/openbaton/nfvo/common/configuration/NfvoGsonDeserializerVimInstance.class
+org/openbaton/nfvo/common/utils/schema/SchemaValidator.class
+org/openbaton/nfvo/common/configuration/NfvoGsonSerializerVimInstance.class
+org/openbaton/nfvo/common/utils/rabbit/RabbitManager.class
+org/openbaton/nfvo/common/configuration/NfvoGsonDeserializerNFVMessage.class
+org/openbaton/nfvo/common/interfaces/Sender.class
+org/openbaton/nfvo/common/internal/model/EventFinishNFVO.class
+org/openbaton/nfvo/common/interfaces/Receiver.class
