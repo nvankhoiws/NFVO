@@ -6,6 +6,12 @@
   <artifactId>security</artifactId>
   <version>5.2.2-SNAPSHOT</version>
   <dependencies>
+    <dependency>
+      <!--This dependency included to run debugger-->
+      <groupId>org.springframework.security</groupId>
+      <artifactId>spring-security-core</artifactId>
+      <version>4.2.5.RELEASE</version>
+    </dependency>
 	<dependency>
       <!--This dependency included to run debugger-->
       <groupId>org.springframework</groupId>
