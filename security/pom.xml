@@ -6,6 +6,12 @@
   <artifactId>security</artifactId>
   <version>5.2.2-SNAPSHOT</version>
   <dependencies>
+	<dependency>
+      <!--This dependency included to run debugger-->
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-beans</artifactId>
+      <version>4.3.15.RELEASE</version>
+    </dependency>
     <dependency>
       <groupId>org.openbaton</groupId>
       <artifactId>repository</artifactId>
