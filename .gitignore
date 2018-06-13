@@ -38,6 +38,7 @@ buildSrc/build
 /spring-*/build
 /src/asciidoc/build
 target/*
+*target/*
 src/main/resources/static/.vscode
 # Eclipse artifacts, including WTP generated manifests
 .classpath
@@ -56,3 +57,4 @@ atlassian-ide-plugin.xml
 .gradletasknamecache
 
 plugins/*
+!plugins/tutorial-dummy-NSR.json
