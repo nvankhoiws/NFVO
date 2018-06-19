@@ -1,6 +1,0 @@
-/home/khoi/Desktop/openbaton/nfvo/NFVO-both/security/src/main/java/org/openbaton/nfvo/security/config/OAuth2AuthorizationServerConfig.java
-/home/khoi/Desktop/openbaton/nfvo/NFVO-both/security/src/main/java/org/openbaton/nfvo/security/config/OAuth2ResourceServerConfig.java
-/home/khoi/Desktop/openbaton/nfvo/NFVO-both/security/src/main/java/org/openbaton/nfvo/security/config/SecurityConfig.java
-/home/khoi/Desktop/openbaton/nfvo/NFVO-both/security/src/main/java/org/openbaton/nfvo/security/config/SecurityConfigurationGson.java
-/home/khoi/Desktop/openbaton/nfvo/NFVO-both/security/src/main/java/org/openbaton/nfvo/security/authentication/GsonSerializerOAuth2AccessToken.java
-/home/khoi/Desktop/openbaton/nfvo/NFVO-both/security/src/main/java/org/openbaton/nfvo/security/authentication/CustomUserDetailsService.java

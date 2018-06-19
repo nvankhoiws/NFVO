@@ -9,6 +9,12 @@
   <description>Openbaton libraries for almost everything</description>
   <url>http://openbaton.github.io</url>
   <inceptionYear>2015</inceptionYear>
+
+  <properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+
   <licenses>
     <license>
       <name>The Apache Software License, Version 2.0</name>
