@@ -158,7 +158,7 @@ public class PluginCaller {
       Channel channel = connection.createChannel();
       String replyQueueName = channel.queueDeclare().getQueue();
       String exchange = "openbaton-exchange";
-      channel.queueBind(replyQueueName, exchange, replyQueueName);
+      channel.queueBind(replyQueueName, exchange, replyQueueName); //replyQueueName is routingKey
       String corrId = UUID.randomUUID().toString();
       BasicProperties props = new Builder().correlationId(corrId).replyTo(replyQueueName).build();
 
@@ -167,7 +167,7 @@ public class PluginCaller {
       pluginMessage.setParameters(args);
 
       String message = gson.toJson(pluginMessage);
-      channel.basicPublish(exchange, pluginId, props, message.getBytes());
+      channel.basicPublish(exchange, pluginId, props, message.getBytes()); // make request queue
 
       final BlockingQueue<String> response = new ArrayBlockingQueue<String>(1);
 
