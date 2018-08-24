@@ -216,10 +216,13 @@ public class ToscaTest {
         new FileInputStream(new File("src/main/resources/Testing/testNSDIperf.yaml"));
 
     Constructor constructor = new Constructor(NSDTemplate.class);
+
     TypeDescription typeDescription = new TypeDescription(NSDTemplate.class);
+
     constructor.addTypeDescription(typeDescription);
 
     Yaml yaml = new Yaml(constructor);
+
     NSDTemplate nsdInput = yaml.loadAs(nsdFile, NSDTemplate.class);
 
     TOSCAParser parser = new TOSCAParser();
@@ -227,7 +230,9 @@ public class ToscaTest {
     NetworkServiceDescriptor nsd = parser.parseNSDTemplate(nsdInput);
 
     Gson gson = new Gson();
+
     System.out.println(gson.toJson(nsd));
+
   }
 
   @Test

@@ -1,0 +1,69 @@
+{
+  "id": "07241c3b-9d50-44ba-a495-9d3b96c226bd",
+  "version": 0,
+  "name": "An updated VimInstance",
+  "authUrl": "A Url",
+  "tenant": "demo",
+  "username": "User",
+  "password": "123456789",
+  "keyPair": "test-key-pair",
+  "location": {
+    "id": "68374c3b-9d50-44bc-a435-9d3b96c226db",
+    "version": 0,
+    "name": "Berlin",
+    "latitude": "52.525876",
+    "longitude": "13.314400"
+  },
+  "securityGroups": [],
+  "flavours": [
+    {
+      "id": "de00be44-6bac-4e69-8e24-77d82d4b63ce",
+      "version": 0,
+      "flavour_key": "m1.tiny",
+      "extId": "1",
+      "ram": 512,
+      "disk": 1,
+      "vcpus": 1
+    }
+  ],
+  "type": "Type2",
+  "images": [
+    {
+      "id": "ab90ae11-267e-4ee6-b623-0d3d42f910ec",
+      "version": 0,
+      "extId": "30ecc9a1-53bb-451a-a9f3-adf460d4cb94",
+      "name": "ImageName",
+      "minRam": 0,
+      "minDiskSpace": 0,
+      "minCPU": "0",
+      "diskFormat": "OPTIONAL.OF(QCOW2)",
+      "containerFormat": "OPTIONAL.OF(BARE)",
+      "created": 1488201198992,
+      "updated": 1488201198992,
+      "public": false
+    }
+  ],
+  "networks": [
+    {
+      "id": "3b772bbb-45fe-4f06-a0e5-c21b9bbe0367",
+      "version": 0,
+      "name": "private1",
+      "extId": "26e791ac-5215-4663-b393-3303e310c42e",
+      "external": false,
+      "shared": false,
+      "subnets": [
+        {
+          "id": "49920742-992c-4097-aa78-0592498b1d40",
+          "version": 0,
+          "name": "private_subnet",
+          "extId": "fa3a5781-dee1-4b96-8aa9-01488a60acaa",
+          "networkId": "26e791ac-5215-4663-b393-3303e310c42e",
+          "cidr": "192.168.216.0/24",
+          "gatewayIp": "192.168.216.1"
+        }
+      ]
+    }
+  ],
+  "projectId": "8a387f1e-9a42-43c7-bab0-3915719c6fca",
+  "active": false
+}

@@ -155,7 +155,7 @@ public class NSDUtils {
           if (!log.isTraceEnabled()) {
             log.debug("Fetched VNFD: " + vnfdNew.getName());
           }
-          vnfdAdd.add(vnfdNew);
+          vnfdAdd.add(vnfdNew); // vnfdNew đã được lưu trong DB, có nhiều thông tin hơn, ta sẽ lấy ra sử dụng thay cho vnfd là một khai báo
           vnfdRemove.add(vnfd);
         } else {
           String[] id_split = vnfd.getId().split("/");

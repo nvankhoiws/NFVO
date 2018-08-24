@@ -1,0 +1,77 @@
+{
+  "lifecycle_event": [
+    {
+      "version": 0,
+      "event": "INSTANTIATE",
+      "lifecycle_events": [
+        "install.sh"
+      ]
+    },
+    {
+      "version": 0,
+      "event": "START",
+      "lifecycle_events": [
+        "server_start-client.sh"
+      ]
+    }
+  ],
+  "configurations": {
+    "version": 0,
+    "configurationParameters": [
+      {
+        "version": 0,
+        "description": "Description of the configuration parameter",
+        "confKey": "answer",
+        "value": "42"
+      }
+    ],
+    "name": "config_name"
+  },
+  "vdu": [
+    {
+      "version": 0,
+      "name": "clientVdu1",
+      "vm_image": [
+        "name of an image"
+      ],
+      "scale_in_out": 2,
+      "vnfc": [
+        {
+          "version": 0,
+          "connection_point": [
+            {
+              "virtual_link_reference": "networkA",
+              "interfaceId": 0,
+              "version": 0
+            }
+          ]
+        }
+      ],
+      "vimInstanceName": [
+        "vim-instance"
+      ]
+    }
+  ],
+  "virtual_link": [
+    {
+      "hb_version": 0,
+      "name": "networkA"
+    }
+  ],
+  "deployment_flavour": [
+    {
+      "version": 0,
+      "flavour_key": "m1.small",
+      "ram": 2048,
+      "disk": 5,
+      "vcpus": 2
+    }
+  ],
+  "type": "client",
+  "endpoint": "generic",
+  "cyclicDependency": false,
+  "hb_version": 0,
+  "name": "iperf-client",
+  "vendor": "FOKUS",
+  "version": "1"
+}

@@ -151,23 +151,23 @@ public class PluginCaller {
         "no plugin found with name: " + pluginId + " into queues: " + queues);
   }
 
-  public Serializable executeRPC(String methodName, Collection<Serializable> args, Type returnType)
+  public Serializable executeRPC(String methodName, Collection<Serializable> args, Type returnType) // returnType is BaseVimInstance.class
       throws IOException, InterruptedException, PluginException {
 
     try (Connection connection = factory.newConnection()) {
       Channel channel = connection.createChannel();
       String replyQueueName = channel.queueDeclare().getQueue();
-      String exchange = "openbaton-exchange";
+      String exchange = "openbaton-exchange"; // name of exchange
       channel.queueBind(replyQueueName, exchange, replyQueueName); //replyQueueName is routingKey
       String corrId = UUID.randomUUID().toString();
       BasicProperties props = new Builder().correlationId(corrId).replyTo(replyQueueName).build();
 
       PluginMessage pluginMessage = new PluginMessage();
-      pluginMessage.setMethodName(methodName);
+      pluginMessage.setMethodName(methodName); // set customer's method name which called
       pluginMessage.setParameters(args);
 
       String message = gson.toJson(pluginMessage);
-      channel.basicPublish(exchange, pluginId, props, message.getBytes()); // make request queue
+      channel.basicPublish(exchange, pluginId, props, message.getBytes()); // make request queue, pluginId = "vim-drivers.test.test" is the name of routing key/the queue's name that'll be declared
 
       final BlockingQueue<String> response = new ArrayBlockingQueue<String>(1);
 

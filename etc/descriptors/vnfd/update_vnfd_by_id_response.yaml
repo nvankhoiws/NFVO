@@ -1,0 +1,88 @@
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+Content-Length: 1998
+{
+  "id": "90f6f488-ade0-4ae4-976d-9e34553603ca",
+  "hb_version": 1,
+  "name": "iperf-client",
+  "projectId": "8a387f1e-9a42-43c7-bab0-3915719c6fca",
+  "vendor": "FOKUS",
+  "version": "0.1",
+  "vnffgd": [],
+  "vld": [],
+  "monitoring_parameter": [],
+  "service_deployment_flavour": [],
+  "auto_scale_policy": [],
+  "connection_point": [],
+  "lifecycle_event": [
+    {
+      "id": "3add5745-d582-43f4-b643-940c06022f11",
+      "version": 0,
+      "event": "START",
+      "lifecycle_events": [
+        "server_start-client.sh"
+      ]
+    },
+    {
+      "id": "5034fc1a-83ad-23f9-7403-533fed9812ad",
+      "version": 0,
+      "event": "INSTANTIATE",
+      "lifecycle_events": [
+        "install.sh"
+      ]
+    }
+  ],
+  "configurations": {
+    "id": "760583a0-ff99-4754-b1c7-2a7b1cc5d7b3",
+    "version": 1,
+    "projectId": "8a387f1e-9a42-43c7-bab0-3915719c6fca",
+    "configurationParameters": [
+      {
+        "id": "5969df32-3199-47d6-83cd-0b4da537dd0f",
+        "version": 0,
+        "description": "Description of the configuration parameter",
+        "confKey": "answer",
+        "value": "42"
+      }
+    ],
+    "name": "config_name"
+  },
+  "vdu": [],
+  "virtual_link": [
+    {
+      "id": "b6be79b6-9f7c-494a-8543-7dec75bcfb22",
+      "hb_version": 0,
+      "extId": "a3ae6958-34dc-305b-6903-3afc54bcad32",
+      "root_requirement": "4",
+      "leaf_requirement": "8",
+      "qos": [],
+      "test_access": [],
+      "connectivity_type": "connectivityType",
+      "name": "private",
+      "connection_points_references": []
+    }
+  ],
+  "vdu_dependency": [],
+  "deployment_flavour": [],
+  "manifest_file": "manifestFile",
+  "manifest_file_security": [
+    {
+      "id": "965c21da-3c04-43f3-b54f-eadb34f7dda2",
+      "version": 1
+    }
+  ],
+  "type": "client",
+  "endpoint": "generic",
+  "vnfPackageLocation": "b42340e7-09c1-4768-ab09-5886ec3e3444",
+  "requires": {
+    "server": {
+      "id": "a32340e7-45c1-4768-ab09-5826ec3e6594",
+      "version": 0,
+      "parameters": [
+        "private_floatingIp",
+        "network"
+      ]
+    }
+  },
+  "provides": []
+}

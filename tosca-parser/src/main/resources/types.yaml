@@ -6,6 +6,8 @@
 
 node_types:
 
+  tosca.nodes.nfv.Root:
+    description: 'Root node'
 
   openbaton.type.VNF:
     properties:
